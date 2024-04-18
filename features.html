@@ -223,10 +223,16 @@
 
     <!-- Footer -->
     <footer class="container-fluid p-2">
-        <div class="row text-center">
-            <div class="col">
+        <div class="row justify-content-betweetn">
+            <div class="col-md">
                 Created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/jiannazzone">Adam
                     Iannazzone</a> and the RetroDECK team.
+            </div>
+            <div class="col-md">
+                <div class="form-check form-switch float-end">
+                    <input class="form-check-input" id="reduce-motion-switch" type="checkbox" role="switch" id="reduceMotionSwitch" onchange="reduceMotion()">
+                    <label class="form-check-label" for="reduceMotionSwitch">Reduce motion</label>
+                </div>
             </div>
         </div>
     </footer>

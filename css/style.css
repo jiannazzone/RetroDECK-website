@@ -40,7 +40,7 @@ footer {
 }
 
 .my-gradient {
-    background: linear-gradient(45deg, #1a9fff, #946beb);
+    background: linear-gradient(0deg, #1a9fff, #946beb);
 }
 
 .jumbotron h1 {
