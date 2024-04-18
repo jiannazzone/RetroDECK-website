@@ -1,23 +1,41 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 
 body {
-    background-color: #111;
+    background-color: #222;
 }
 
 .navbar {
     background: linear-gradient(-95deg, #1a9fff, #946beb);
+    font-family: "Source Sans 3";
 }
 
 .navbar .dropdown-menu {
+    background-color: #222;
+}
+
+/* .btn-dark {
+    background-color: #111;
+} */
+
+.btn {
+    font-family: "Source Sans 3", sans-serif; 
     background-color: #111;
 }
 
-.btn-dark {
-    background-color: #111;
+.btn:hover, button {
+    background-color: #222;
+    border: 1px white solid;
 }
 
-#lead-jumbotron {
+.jumbotron {
     background: linear-gradient(45deg, #1a9fff, #946beb);
     color: white;
     border: 1px white solid;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.jumbotron h1 {
+    font-family: "Nunito Sans", sans-serif;
 }
