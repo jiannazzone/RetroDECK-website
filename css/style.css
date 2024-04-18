@@ -1,0 +1,23 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+    background-color: #111;
+}
+
+.navbar {
+    background: linear-gradient(-95deg, #1a9fff, #946beb);
+}
+
+.navbar .dropdown-menu {
+    background-color: #111;
+}
+
+.btn-dark {
+    background-color: #111;
+}
+
+#lead-jumbotron {
+    background: linear-gradient(45deg, #1a9fff, #946beb);
+    color: white;
+    border: 1px white solid;
+}
