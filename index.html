@@ -15,11 +15,11 @@
     <meta name="description"
         content="RetroDECK is a polished and beginner-friendly environment for playing your retro games on Steam Deck, available with just one click from the Discover app.">
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/icon_circle_2_180x180.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon_circle_16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon_circle_1_32x32.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/icon_circle_2_180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon_circle_3_192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon_circle_4_512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/icon_circle_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon_circle_1_32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/icons/icon_circle_2_180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon_circle_3_192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon_circle_4_512x512.png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
@@ -93,60 +93,73 @@
     </nav>
 
     <div class="container-fluid">
-        <main class="container pt-3">
-            
+        <main class="container">
+
             <!-- Lead Jumbotron -->
-            <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="lead-jumbotron">
+            <div class="p-2 mb-4 mt-4 bg-body-tertiary rounded-3" id="lead-jumbotron">
                 <div class="container-fluid py-5">
                     <h1 class="display-5 fw-bold">Your all-in-one emulation package for the Steam Deck</h1>
-                    <p class="col-md-8 fs-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ante finibus nulla imperdiet mattis id id augue. Donec maximus molestie tempor. Nulla efficitur ex erat, nec vehicula arcu dapibus sed.</p>
-                    <a class="btn btn-dark btn-lg" type="button" target="_blank" rel="noopener noreferrer" href="https://flathub.org/apps/details/net.retrodeck.retrodeck">
-                        <i class="bi bi-download"></i> Get RetroDECK
+                    <p class="col-md-8 fs-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ante
+                        finibus nulla imperdiet mattis id id augue. Donec maximus molestie tempor. Nulla efficitur ex
+                        erat, nec vehicula arcu dapibus sed.</p>
+                    <a type="button" class="align-center" target="_blank" rel="noopener noreferrer"
+                        href="https://flathub.org/apps/details/net.retrodeck.retrodeck">
+                        <img src="assets/icons/flathub.webp">
                     </a>
                 </div>
             </div>
             <!-- End Jumbotron -->
 
             <!-- Screenshot Carousel -->
-            <div id="screenshotCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="screenshotCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/assets/img/screen01.jpeg" class="d-block w-100 rounded-3" alt="The RetroDECK logo displayed on a Steam Deck">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/screen02.jpeg" class="d-block w-100 rounded-3" alt="The RetroDECK icon visible in a Steam Library">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/screen03.jpeg" class="d-block w-100 rounded-3" alt="Steam Deck quick settings in the foreground with the RetroDECK interface behind it">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/screen04.jpeg" class="d-block w-100 rounded-3" alt="One of the ES-DE Themes with SEGA Genesis visible">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/screen05.jpeg" class="d-block w-100 rounded-3" alt="Sonic the Hedgehog 2 (SEGA Genesis) on the Steam Deck">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/screen06.jpeg" class="d-block w-100 rounded-3" alt="A list of TurboGrafx games in the ES-DE frontend">
-                  </div>
+                    <div class="carousel-item active">
+                        <img src="/assets/img/screens/screen01.jpeg" class="d-block w-100 rounded-3"
+                            alt="The RetroDECK logo displayed on a Steam Deck">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/screens/screen02.jpeg" class="d-block w-100 rounded-3"
+                            alt="The RetroDECK icon visible in a Steam Library">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/screens/screen03.jpeg" class="d-block w-100 rounded-3"
+                            alt="Steam Deck quick settings in the foreground with the RetroDECK interface behind it">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/screens/screen04.jpeg" class="d-block w-100 rounded-3"
+                            alt="One of the ES-DE Themes with SEGA Genesis visible">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/screens/screen05.jpeg" class="d-block w-100 rounded-3"
+                            alt="Sonic the Hedgehog 2 (SEGA Genesis) on the Steam Deck">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/screens/screen06.jpeg" class="d-block w-100 rounded-3"
+                            alt="A list of TurboGrafx games in the ES-DE frontend">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
             <!-- End Carousel -->
 
             <!-- Donate Jumbotron -->
-            <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="lead-jumbotron">
+            <div class="p-2 mb-4 bg-body-tertiary rounded-3" id="lead-jumbotron">
                 <div class="container-fluid py-4">
                     <h1 class="display-5 fw-bold">We can't do this alone</h1>
-                    <p class="col-md-8 fs-4">RetroDECK is run by volunteers. If you appreciate our work, please consider donating to us or our sibling projects.</p>
-                    <a class="btn btn-dark btn-lg" type="button" target="_blank" rel="noopener noreferrer" href="https://flathub.org/apps/details/net.retrodeck.retrodeck">
-                        <i class="bi bi-balloon-heart"></i> Learn how to donate
+                    <p class="col-md-8 fs-4">RetroDECK is run by volunteers. If you appreciate our work, please consider
+                        donating to us or our sibling projects.</p>
+                    <a class="btn btn-dark btn-lg" type="button" target="_blank" rel="noopener noreferrer"
+                        href="https://flathub.org/apps/details/net.retrodeck.retrodeck">
+                        <i class="bi bi-balloon-heart"></i> Learn More
                     </a>
                 </div>
             </div>
