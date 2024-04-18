@@ -6,9 +6,13 @@ body {
     background-color: #222;
 }
 
-.navbar {
+.navbar, footer {
     background: linear-gradient(-95deg, #1a9fff, #946beb);
     font-family: "Source Sans 3";
+}
+
+footer {
+    color: white;
 }
 
 .navbar .dropdown-menu {
@@ -30,12 +34,27 @@ body {
 }
 
 .jumbotron {
-    background: linear-gradient(45deg, #1a9fff, #946beb);
     color: white;
     border: 1px white solid;
     font-family: "Source Sans 3", sans-serif;
 }
 
+.my-gradient {
+    background: linear-gradient(45deg, #1a9fff, #946beb);
+}
+
+.feature-col {
+    background-color: white;
+}
+
 .jumbotron h1 {
     font-family: "Nunito Sans", sans-serif;
+}
+
+.jumbotron p>a, footer a {
+    color: #222;
+}
+
+.jumbotron p>a:hover, footer a:hover{
+    color: white;
 }
