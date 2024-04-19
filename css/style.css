@@ -19,19 +19,23 @@ footer {
     background-color: #222;
 }
 
-/* .btn-dark {
-    background-color: #111;
-} */
-
 .btn {
     font-family: "Source Sans 3", sans-serif; 
+}
+
+/* #flathub-button {
+    background: url('https://flathub.org/api/badge?locale=en');
+    background-size: cover;
+} */
+
+/* .btn-dark {
     background-color: #111;
 }
 
 .btn:hover, button {
     background-color: #222;
     border: 1px white solid;
-}
+} */
 
 .jumbotron, .card-header {
     color: white;

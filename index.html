@@ -120,8 +120,8 @@
 
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h1 class="display-5 fw-bold">Your all-in-one emulation package for the Steam Deck</h1>
-                        <p class="fs-4">
+                        <h1 class="display-md-5 fw-bold">Your all-in-one emulation package for the Steam Deck</h1>
+                        <p class="fs-md-4">
                             Powered by <a target="_blank" rel="noopener noreferrer" href="https://es-de.org/">ES-DE</a>,
                             RetroDECK combines all of the best open-source emulators into a single application.
                             Pair that with a best-in-class Steam Deck controller configuration, and you'll be in retro
@@ -130,10 +130,14 @@
                         </p>
                     </div>
                     <div class="col-md-4 text-center">
-                        <a type="button" class="align-center" target="_blank" rel="noopener noreferrer"
-                            href="https://flathub.org/apps/details/net.retrodeck.retrodeck">
-                            <img width='200' alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en' />
+                        <a type="button" id="flathub-button" class="align-center btn btn-dark btn-lg" target="_blank"
+                            rel="noopener noreferrer" href="https://flathub.org/apps/details/net.retrodeck.retrodeck">
+                            <i class="bi"><img class="img-fluid" alt='Download on Flathub'
+                                    src='assets/logos/flathub.svg' /></i>
+                            <div>Get it on</div>
+                            <div>Flathub</div>
                         </a>
+
                     </div>
                 </div>
             </div>
@@ -143,7 +147,8 @@
         <!-- Screenshot Carousel -->
         <div class="row">
             <div class="col">
-                <div id="screenshotCarousel" class="carousel carousel-fade slide mb-4 position-relative" data-bs-ride="carousel">
+                <div id="screenshotCarousel" class="carousel carousel-fade slide mb-4 position-relative"
+                    data-bs-ride="carousel">
                     <div class="carousel-inner" id="deck-carousel">
                         <div class="carousel-item active">
                             <img src="assets/screens_old/screen01.jpeg" class="d-block w-100 rounded-3"
@@ -196,8 +201,8 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h1 class="display-5 fw-bold">We can't do this alone</h1>
-                        <p class="fs-4">
+                        <h1 class="display-md-5 fw-bold">We can't do this alone</h1>
+                        <p class="fs-md-4">
                             RetroDECK is run by volunteers.
                             If you appreciate our work, please consider code contribution or donating to us or our
                             sibling
@@ -205,7 +210,8 @@
                         </p>
                     </div>
                     <div class="col-md-4 text-center">
-                        <a class="btn btn-dark btn-lg" type="button" target="_blank" rel="noopener noreferrer"
+                        <a class="btn btn-dark btn-lg align-center" type="button" target="_blank"
+                            rel="noopener noreferrer"
                             href="https://retrodeck.readthedocs.io/en/latest/wiki_about/donations-licenses/">
                             <i class="bi bi-balloon-heart"></i> Learn More
                         </a>
@@ -221,11 +227,11 @@
     <!-- Footer -->
     <footer class="container-fluid pt-2 pb-2 sticky-bottom">
         <div class="row justify-content-betweetn">
-            <div class="col-md">
+            <div class="col-sm small">
                 Created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/jiannazzone">Adam
                     Iannazzone</a> and the RetroDECK team.
             </div>
-            <div class="col-md">
+            <div class="col-sm small">
                 <div class="form-check form-switch float-end">
                     <input class="form-check-input" id="reduce-motion-switch" type="checkbox" role="switch"
                         id="reduceMotionSwitch" onchange="reduceMotion()">

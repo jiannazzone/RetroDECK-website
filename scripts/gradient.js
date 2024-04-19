@@ -15,7 +15,9 @@ function reduceMotion() {
     let reduceMotionState = document.getElementById('reduce-motion-switch').checked;
     if (reduceMotionState) {
         clearInterval(gradientInterval);
+        // document.getElementById('screenshotCarousel').classList.remove('ride');
     } else {
+        // document.getElementById('screenshotCarousel').classList.add('ride');
         gradientInterval = setInterval(function () {
             updateGradientAngle();
         }, 100);
