@@ -105,8 +105,8 @@
     <main class="container mt-4 mb-4">
 
         <!-- <div class="row">
-            <div class="col">
-                <img class="img-fluid p-4" src="assets/logos/logo_unstacked.svg">
+            <div class="col" id="big-logo">
+                <img class="img-fluid p-4" src="assets/logos/rd-esde-logo.svg">
             </div>
         </div> -->
 
@@ -114,9 +114,9 @@
         <div class="p-2 mb-4 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
             <div class="container-fluid py-5">
 
-                <div class="row">
+                <!-- <div class="row">
                     <img class="img-fluid p-4" src="assets/logos/logo_unstacked.svg">
-                </div>
+                </div> -->
 
                 <div class="row align-items-center">
                     <div class="col-md-8">
@@ -124,7 +124,8 @@
                         <p class="fs-4">
                             Powered by <a target="_blank" rel="noopener noreferrer" href="https://es-de.org/">ES-DE</a>,
                             RetroDECK combines all of the best open-source emulators into a single application.
-                            Pair that with a best-in-class Steam Deck controller configuration, and you'll be in retro gaming
+                            Pair that with a best-in-class Steam Deck controller configuration, and you'll be in retro
+                            gaming
                             paradise.</a>
                         </p>
                     </div>
@@ -141,101 +142,65 @@
 
         <!-- Screenshot Carousel -->
         <div class="row">
-            <div class="col position-relative">
-                <img class="img-fluid mb-4 rounded-3" id="screen-blank" src="assets/screens/blank.png">
-                <!-- <div id="screenshotCarousel" class="carousel slide mb-4 z-1 position-absolute" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+            <div class="col">
+                <div id="screenshotCarousel" class="carousel carousel-fade slide mb-4 position-relative" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="deck-carousel">
                         <div class="carousel-item active">
-                            <img src="assets/screens/screen01.png" class="d-block w-100 rounded-3"
+                            <img src="assets/screens_old/screen01.jpeg" class="d-block w-100 rounded-3"
                                 alt="The RetroDECK logo displayed on a Steam Deck">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/screens/screen02.png" class="d-block w-100 rounded-3"
+                            <img src="assets/screens_old/screen02.jpeg" class="d-block w-100 rounded-3"
                                 alt="The RetroDECK icon visible in a Steam Library">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/screens/screen03.png" class="d-block w-100 rounded-3"
+                            <img src="assets/screens_old/screen03.jpeg" class="d-block w-100 rounded-3"
                                 alt="Steam Deck quick settings in the foreground with the RetroDECK interface behind it">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/screens/screen04.png" class="d-block w-100 rounded-3"
+                            <img src="assets/screens_old/screen04.jpeg" class="d-block w-100 rounded-3"
                                 alt="One of the ES-DE Themes with SEGA Genesis visible">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/screens/screen05.png" class="d-block w-100 rounded-3"
+                            <img src="assets/screens_old/screen05.jpeg" class="d-block w-100 rounded-3"
                                 alt="Sonic the Hedgehog 2 (SEGA Genesis) on the Steam Deck">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/screens/screen06.png" class="d-block w-100 rounded-3"
+                            <img src="assets/screens_old/screen06.jpeg" class="d-block w-100 rounded-3"
                                 alt="A list of TurboGrafx games in the ES-DE frontend">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel"
+
+                    <img class="img-fluid mb-4 rounded-3" id="screen-blank" src="assets/screens/blank.png">
+
+                    <button class="carousel-control-prev z-2" type="button" data-bs-target="#screenshotCarousel"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel"
+                    <button class="carousel-control-next z-2" type="button" data-bs-target="#screenshotCarousel"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div> -->
+                </div>
             </div>
         </div>
-
-        <!-- <div id="screenshotCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/screens/screen01.jpeg" class="d-block w-100 rounded-3"
-                        alt="The RetroDECK logo displayed on a Steam Deck">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/screens/screen02.jpeg" class="d-block w-100 rounded-3"
-                        alt="The RetroDECK icon visible in a Steam Library">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/screens/screen03.jpeg" class="d-block w-100 rounded-3"
-                        alt="Steam Deck quick settings in the foreground with the RetroDECK interface behind it">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/screens/screen04.jpeg" class="d-block w-100 rounded-3"
-                        alt="One of the ES-DE Themes with SEGA Genesis visible">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/screens/screen05.jpeg" class="d-block w-100 rounded-3"
-                        alt="Sonic the Hedgehog 2 (SEGA Genesis) on the Steam Deck">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/screens/screen06.jpeg" class="d-block w-100 rounded-3"
-                        alt="A list of TurboGrafx games in the ES-DE frontend">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
         <!-- End Carousel -->
 
         <!-- Donate Jumbotron -->
         <div class="p-2 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
             <div class="container-fluid py-4">
                 <div class="row">
-                    
+
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <h1 class="display-5 fw-bold">We can't do this alone</h1>
                         <p class="fs-4">
                             RetroDECK is run by volunteers.
-                            If you appreciate our work, please consider code contribution or donating to us or our sibling
+                            If you appreciate our work, please consider code contribution or donating to us or our
+                            sibling
                             projects.
                         </p>
                     </div>
@@ -254,7 +219,7 @@
     <!-- End Main Content -->
 
     <!-- Footer -->
-    <footer class="container-fluid p-2 sticky-bottom">
+    <footer class="container-fluid pt-2 pb-2 sticky-bottom">
         <div class="row justify-content-betweetn">
             <div class="col-md">
                 Created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/jiannazzone">Adam

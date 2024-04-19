@@ -58,3 +58,10 @@ footer {
 .card-header {
     background: #946beb;
 }
+
+#screen-blank {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
