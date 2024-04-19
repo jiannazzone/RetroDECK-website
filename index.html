@@ -104,26 +104,37 @@
     <!-- Main Content -->
     <main class="container mt-4 mb-4">
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col">
-                <img class="img-fluid p-4" src="assets/img/logo_stacked_esde.png">
+                <img class="img-fluid p-4" src="assets/logos/logo_unstacked.svg">
             </div>
-        </div>
+        </div> -->
 
         <!-- Lead Jumbotron -->
         <div class="p-2 mb-4 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
             <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Your all-in-one emulation package for the Steam Deck</h1>
-                <p class="col-md-8 fs-4">
-                    Powered by <a target="_blank" rel="noopener noreferrer" href="https://es-de.org/">ES-DE</a>,
-                    RetroDECK combines all of the best open-source emulators into a single application.
-                    Pair that with a best-in-class Steam Deck controller configuration, and you'll be in retro gaming
-                    paradise.</a>
-                </p>
-                <a type="button" class="align-center" target="_blank" rel="noopener noreferrer"
-                    href="https://flathub.org/apps/details/net.retrodeck.retrodeck">
-                    <img width='200' alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en' />
-                </a>
+
+                <div class="row">
+                    <img class="img-fluid p-4" src="assets/logos/logo_unstacked.svg">
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-5 fw-bold">Your all-in-one emulation package for the Steam Deck</h1>
+                        <p class="fs-4">
+                            Powered by <a target="_blank" rel="noopener noreferrer" href="https://es-de.org/">ES-DE</a>,
+                            RetroDECK combines all of the best open-source emulators into a single application.
+                            Pair that with a best-in-class Steam Deck controller configuration, and you'll be in retro gaming
+                            paradise.</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a type="button" class="align-center" target="_blank" rel="noopener noreferrer"
+                            href="https://flathub.org/apps/details/net.retrodeck.retrodeck">
+                            <img width='200' alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en' />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End Jumbotron -->
@@ -216,13 +227,25 @@
         <!-- Donate Jumbotron -->
         <div class="p-2 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
             <div class="container-fluid py-4">
-                <h1 class="display-5 fw-bold">We can't do this alone</h1>
-                <p class="col-md-8 fs-4">RetroDECK is run by volunteers. If you appreciate our work, please consider
-                    donating to us or our sibling projects.</p>
-                <a class="btn btn-dark btn-lg" type="button" target="_blank" rel="noopener noreferrer"
-                    href="https://retrodeck.readthedocs.io/en/latest/wiki_about/donations-licenses/">
-                    <i class="bi bi-balloon-heart"></i> Learn More
-                </a>
+                <div class="row">
+                    
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-5 fw-bold">We can't do this alone</h1>
+                        <p class="fs-4">
+                            RetroDECK is run by volunteers.
+                            If you appreciate our work, please consider code contribution or donating to us or our sibling
+                            projects.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a class="btn btn-dark btn-lg" type="button" target="_blank" rel="noopener noreferrer"
+                            href="https://retrodeck.readthedocs.io/en/latest/wiki_about/donations-licenses/">
+                            <i class="bi bi-balloon-heart"></i> Learn More
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End Jumbotron -->
@@ -239,7 +262,8 @@
             </div>
             <div class="col-md">
                 <div class="form-check form-switch float-end">
-                    <input class="form-check-input" id="reduce-motion-switch" type="checkbox" role="switch" id="reduceMotionSwitch" onchange="reduceMotion()">
+                    <input class="form-check-input" id="reduce-motion-switch" type="checkbox" role="switch"
+                        id="reduceMotionSwitch" onchange="reduceMotion()">
                     <label class="form-check-label" for="reduceMotionSwitch">Reduce motion</label>
                 </div>
             </div>
