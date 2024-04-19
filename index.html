@@ -104,13 +104,19 @@
     <!-- Main Content -->
     <main class="container mt-4 mb-4">
 
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid p-4" src="assets/img/logo_stacked_esde.png">
+            </div>
+        </div>
+
         <!-- Lead Jumbotron -->
         <div class="p-2 mb-4 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
             <div class="container-fluid py-5">
                 <h1 class="display-5 fw-bold">Your all-in-one emulation package for the Steam Deck</h1>
                 <p class="col-md-8 fs-4">
                     Powered by <a target="_blank" rel="noopener noreferrer" href="https://es-de.org/">ES-DE</a>,
-                    RetroDeck combines all of the best open-source emulators into a single application.
+                    RetroDECK combines all of the best open-source emulators into a single application.
                     Pair that with a best-in-class Steam Deck controller configuration, and you'll be in retro gaming
                     paradise.</a>
                 </p>
@@ -123,7 +129,51 @@
         <!-- End Jumbotron -->
 
         <!-- Screenshot Carousel -->
-        <div id="screenshotCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="row">
+            <div class="col position-relative">
+                <img class="img-fluid mb-4 rounded-3" id="screen-blank" src="assets/screens/blank.png">
+                <!-- <div id="screenshotCarousel" class="carousel slide mb-4 z-1 position-absolute" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/screens/screen01.png" class="d-block w-100 rounded-3"
+                                alt="The RetroDECK logo displayed on a Steam Deck">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/screens/screen02.png" class="d-block w-100 rounded-3"
+                                alt="The RetroDECK icon visible in a Steam Library">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/screens/screen03.png" class="d-block w-100 rounded-3"
+                                alt="Steam Deck quick settings in the foreground with the RetroDECK interface behind it">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/screens/screen04.png" class="d-block w-100 rounded-3"
+                                alt="One of the ES-DE Themes with SEGA Genesis visible">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/screens/screen05.png" class="d-block w-100 rounded-3"
+                                alt="Sonic the Hedgehog 2 (SEGA Genesis) on the Steam Deck">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/screens/screen06.png" class="d-block w-100 rounded-3"
+                                alt="A list of TurboGrafx games in the ES-DE frontend">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- <div id="screenshotCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/screens/screen01.jpeg" class="d-block w-100 rounded-3"
@@ -160,7 +210,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </div> -->
         <!-- End Carousel -->
 
         <!-- Donate Jumbotron -->
@@ -181,7 +231,7 @@
     <!-- End Main Content -->
 
     <!-- Footer -->
-    <footer class="container-fluid p-2">
+    <footer class="container-fluid p-2 sticky-bottom">
         <div class="row justify-content-betweetn">
             <div class="col-md">
                 Created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/jiannazzone">Adam
