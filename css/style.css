@@ -56,13 +56,12 @@ footer {
     left: 0;
 }
 
+/* Features Page */
+
 .row.feature-list-item {
     padding: 0.5rem;
+    cursor: pointer;
     background: #333;
-}
-
-.row.feature-list-item#active-feature-item {
-    background: transparent;
 }
 
 .feature-detail-container {
@@ -71,4 +70,8 @@ footer {
 
 .feature-detail-container#active-feature-detail {
     display: inherit;
+}
+
+#feature-jumbotron {
+    background: #333;
 }
