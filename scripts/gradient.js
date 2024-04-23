@@ -6,7 +6,12 @@ reduceMotion();
 
 function updateGradientAngle() {
     for (let i = 0; i < gradientSpinElems.length; i++) {
-        gradientAngles[i] += Math.floor(Math.random() * 5) - 5;
+        gradientAngles[i] += Math.floor(Math.random() * 6) - 2;
+        if (gradientAngles[i] > 360) {
+            gradientAngles[i] -= 360;
+        } else if (gradientAngles[i] < -360) {
+            gradientAngles[i] += 360;
+        }
         gradientSpinElems[i].style.background = `linear-gradient(${gradientAngles[i]}deg, #1a9fff, 15%, #946beb)`;
     }
 }
