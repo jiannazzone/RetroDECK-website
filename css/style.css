@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+/* Global Styles */
 
 body {
     background-color: #222;
@@ -23,7 +24,7 @@ footer {
     font-family: "Source Sans 3", sans-serif; 
 }
 
-.jumbotron, .card-header {
+.jumbotron {
     color: white;
     border: 1px white solid;
     font-family: "Source Sans 3", sans-serif;
@@ -45,9 +46,15 @@ footer {
     color: white;
 }
 
-.card-header {
-    background: #946beb;
+#reduce-motion-switch:checked {
+    background-color: #946beb;
+    border-color: white;
 }
+#reduce-motion-switch {
+    border-color: #946beb;
+}
+
+/* Homepage Styles */
 
 #screen-blank {
     position: absolute;
@@ -56,7 +63,11 @@ footer {
     left: 0;
 }
 
-/* Features Page */
+/* Features Page Styles */
+
+#feature-jumbotron {
+    background: #333;
+}
 
 .row.feature-list-item {
     padding: 0.5rem;
@@ -68,10 +79,14 @@ footer {
     display: none;
 }
 
-.feature-detail-container#active-feature-detail {
+#active-feature-detail {
     display: inherit;
 }
 
-#feature-jumbotron {
-    background: #333;
+.feature-list-item {
+    border: 1px transparent solid;
+}
+
+#active-feature-item {
+    border: 1px white solid;
 }
