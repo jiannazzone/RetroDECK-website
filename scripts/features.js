@@ -1,6 +1,6 @@
-featureTitles = document.getElementsByClassName('feature-list-item');
-featureDetails = document.getElementsByClassName('feature-detail-container');
-// let currentFeature = 0;
+const featureTitles = document.getElementsByClassName('feature-list-item');
+const featureDetails = document.getElementsByClassName('feature-detail-container');
+let currentFeature = 0;
 
 for (let i = 0; i < featureTitles.length; i++) {
     featureTitles[i].addEventListener('click', function () {
@@ -12,20 +12,18 @@ for (let i = 0; i < featureTitles.length; i++) {
 }
 
 function updateActiveFeature(i) {
-    // Reset all
-    for (let j = 0; j < featureTitles.length; j++) {
-        featureTitles[j].removeAttribute('id');
-        featureDetails[j].removeAttribute('id');
-        featureTitles[j].className = 'row feature-list-item rounded-3';
-        featureTitles[j].style = '';
-    }
+    const lastCurrentFeature = currentFeature;
+    currentFeature = i;
 
-    // currentFeature = i;
+    // New current feature
+    featureTitles[currentFeature].className += ' gradient-spin my-gradient';
+    featureTitles[currentFeature].id = 'active-feature-item';
+    featureDetails[currentFeature].id = 'active-feature-detail'
 
-    // Update the active feature
-    featureTitles[i].id = 'active-feature-item';
-    featureDetails[i].id = 'active-feature-detail'
+    // Reset previous current feature
+    featureTitles[lastCurrentFeature].removeAttribute('id');
+    featureTitles[lastCurrentFeature].className = 'row feature-list-item rounded-3';
+    featureTitles[lastCurrentFeature].style = '';
+    featureDetails[lastCurrentFeature].removeAttribute('id');
 
-    // Handle styles
-    featureTitles[i].className += ' gradient-spin my-gradient';
 }

@@ -73,6 +73,11 @@ footer {
     padding: 0.5rem;
     cursor: pointer;
     background: #333;
+    border: 1px transparent solid;
+}
+
+#active-feature-item {
+    border: 1px white solid;
 }
 
 .feature-detail-container {
@@ -81,12 +86,4 @@ footer {
 
 #active-feature-detail {
     display: inherit;
-}
-
-.feature-list-item {
-    border: 1px transparent solid;
-}
-
-#active-feature-item {
-    border: 1px white solid;
-}
+} 
