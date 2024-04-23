@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>RetroDECK Features</title>
+    <title>RetroDECK</title>
     <meta name="twitter:description"
         content="RetroDECK is a polished and beginner-friendly environment for playing your retro games on Steam Deck, available with just one click from the Discover app.">
     <meta property="og:image" content="assets/img/RetroDeck%20Wallpaper.png">
@@ -32,7 +32,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
-        <div class="container">
+        <div class=" container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/icons/squircle-icon.svg" height="40">
             </a>
@@ -102,135 +102,189 @@
     <!-- End Navbar -->
 
     <!-- Main Content -->
-    <main class="container mt-4 mb-4" id="features">
+    <main class="container mt-4 mb-4">
 
         <!-- Lead Jumbotron -->
         <div class="p-2 mb-4 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
             <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Why RetroDECK?</h1>
+
+                <!-- <div class="row">
+                    <img class="img-fluid p-4" src="assets/logos/logo_unstacked.svg">
+                </div> -->
+
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-md-5 fw-bold">It's dangerous to go alone! Take these.</h1>
+                        <p class="fs-md-4">
+                            With more features than you can count, RetroDECK has you covered.
+                            We're adding more with every release, so be sure to check out the Wiki for the latest
+                            updates.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a class="btn btn-dark btn-lg align-center" type="button" target="_blank"
+                            rel="noopener noreferrer" href="https://retrodeck.readthedocs.io/en/latest/">
+                            <i class="bi bi-mortarboard pe-2"></i>Full Documentation
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End Jumbotron -->
 
-        <!-- Card Row -->
-        <div class="row pb-4 gy-4">
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-play-circle"></i> Pick Up & Play</h3>
-                    </div>
-                    <div class="card-body">
-                        No configuration is needed to start. You provide the games and we provide the play.
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-lightning-charge"></i> Quick Resume</h3>
-                    </div>
-                    <div class="card-body">
-                        Quit your game and pick it up exactly where you left off.
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-rewind-circle"></i> Pick Up & Play</h3>
-                    </div>
-                    <div class="card-body">
-                        Go back in time and retry without having to restart your game or skip over that long conversation.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Card Row -->
+        <!-- Feature Section -->
+        <div class="p-2 mb-4 rounded-3 jumbotron my-gradient gradient-spin">
+            <div class="container-fluid">
+                <!-- Theme based on https://github.com/anthonycaccese/art-book-next-es-de-->
 
-        <!-- Card Row -->
-        <div class="row pb-4 gy-4">
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-tools"></i> The Configurator</h3>
-                    </div>
-                    <div class="card-body">
-                        A super powerful multi-tool interface that allows you to have quick access to the advanced functions and tweak them to your desire.
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-box-seam"></i> Flatpak</h3>
-                    </div>
-                    <div class="card-body">
-                        Everything is contained within one application and not over your entire filesystem. Only one place to look and one place to backup!
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-steam"></i> Keep your existing OS</h3>
-                    </div>
-                    <div class="card-body">
-                        With RetroDECK there is no need to replace your existing Linux / SteamOS to get a all-in-one retro gaming solution. Install it on what you already have.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Card Row -->
+                <div class="row">
+                    <!-- Left Column -->
+                    <div class="col-4 rounded-3" id="left-feature-column">
 
-        <!-- Card Row -->
-        <div class="row pb-4 gy-4">
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-dpad"></i> Custom Hotkeys</h3>
+                        <!-- Logo Header -->
+                        <div class="row p-3" id="feature-logo-container">
+                            <div class="col">
+                                <img class="img-fluid" src="/assets/logos/logo_stacked_esde.png">
+                            </div>
+                        </div>
+
+                        <!-- Feature List -->
+                        <div class="h5" id="feature-list">
+                            <div class="row feature-list-item" id="active-feature-item">
+                                <div class="col">
+                                    Pick Up and Play
+                                </div>
+                            </div>
+                            <div class="row feature-list-item" id="">
+                                <div class="col">
+                                    Quick Resume
+                                </div>
+                            </div>
+                            <div class="row feature-list-item" id="">
+                                <div class="col">
+                                    Rewind & Fast Forward
+                                </div>
+                            </div>
+                            <div class="row feature-list-item" id="">
+                                <div class="col">
+                                    Configurator
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        Features a in-depth global hotkey system with radial menus in addition to button combos via Steam Input.
+                    <!-- End Left Column -->
+
+                    <!-- Right Column -->
+                    <div class="col-8" id="feature-detail-column">
+                        <div class="feature-detail-container" id="active-feature-detail">
+                            <!-- Image/Video Container -->
+                            <div class="row" id="feature-media-container">
+                                <div class="col">
+                                    <img class="img-fluid rounded-3" src="assets/screens_old/screen01.jpeg">
+                                </div>
+                            </div>
+
+                            <!-- Feature Detail Container -->
+                            <div class="row rounded-3 py-2 m-1" id="feature-details-container">
+                                <div class="col">
+                                    <h4>Don't waste time on setup</h4>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-detail-container" id="">
+                            <!-- Image/Video Container -->
+                            <div class="row" id="feature-media-container">
+                                <div class="col">
+                                    <img class="img-fluid rounded-3" src="assets/screens_old/screen02.jpeg">
+                                </div>
+                            </div>
+
+                            <!-- Feature Detail Container -->
+                            <div class="row rounded-3 py-2 m-1" id="feature-details-container">
+                                <div class="col">
+                                    <h4>Don't waste time on setup #2</h4>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-detail-container" id="">
+                            <!-- Image/Video Container -->
+                            <div class="row" id="feature-media-container">
+                                <div class="col">
+                                    <img class="img-fluid rounded-3" src="assets/screens_old/screen03.jpeg">
+                                </div>
+                            </div>
+
+                            <!-- Feature Detail Container -->
+                            <div class="row rounded-3 py-2 m-1" id="feature-details-container">
+                                <div class="col">
+                                    <h4>Don't waste time on setup #3</h4>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-detail-container" id="">
+                            <!-- Image/Video Container -->
+                            <div class="row" id="feature-media-container">
+                                <div class="col">
+                                    <img class="img-fluid rounded-3" src="assets/screens_old/screen04.jpeg">
+                                </div>
+                            </div>
+
+                            <!-- Feature Detail Container -->
+                            <div class="row rounded-3 py-2 m-1" id="feature-details-container">
+                                <div class="col">
+                                    <h4>Don't waste time on setup #4</h4>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                </div>
-            </div>
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-file-earmark-binary"></i> Cheats Enabled</h3>
-                    </div>
-                    <div class="card-body">
-                        Can't surpass THAT point? Don't want to farm? Enable cheats and play smoothly.
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm  d-flex align-items-stretch">
-                <div class="card px-0">
-                    <div class="card-header">
-                        <h3><i class="bi bi-database-down"></i> Metadata Import</h3>
-                    </div>
-                    <div class="card-body">
-                        From the ES-DE frontend you can pull information to your library to create a beautiful user experience from various sources, that fits your style.
-                    </div>
+                    <!-- End Right Column -->
                 </div>
             </div>
         </div>
-        <!-- End Card Row -->
+        <!-- End Feature Section -->
 
     </main>
-
     <!-- End Main Content -->
 
     <!-- Footer -->
-    <footer class="container-fluid p-2">
-        <div class="row justify-content-betweetn">
-            <div class="col-md">
+    <footer class="container-fluid pt-2 pb-2">
+        <div class="row justify-content-betweetn small">
+            <div class="col float-start align-content-end">
                 Created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/jiannazzone">Adam
                     Iannazzone</a> and the RetroDECK team.
             </div>
-            <div class="col-md">
+            <div class="col align-content-end">
                 <div class="form-check form-switch float-end">
-                    <input class="form-check-input" id="reduce-motion-switch" type="checkbox" role="switch" id="reduceMotionSwitch" onchange="reduceMotion()">
+                    <input class="form-check-input" id="reduce-motion-switch" type="checkbox" role="switch"
+                        id="reduceMotionSwitch" onchange="reduceMotion()">
                     <label class="form-check-label" for="reduceMotionSwitch">Reduce motion</label>
                 </div>
             </div>
@@ -242,6 +296,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="scripts/gradient.js"></script>
+    <script src="scripts/features.js"></script>
 </body>
 
 </html>

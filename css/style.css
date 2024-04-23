@@ -23,20 +23,6 @@ footer {
     font-family: "Source Sans 3", sans-serif; 
 }
 
-/* #flathub-button {
-    background: url('https://flathub.org/api/badge?locale=en');
-    background-size: cover;
-} */
-
-/* .btn-dark {
-    background-color: #111;
-}
-
-.btn:hover, button {
-    background-color: #222;
-    border: 1px white solid;
-} */
-
 .jumbotron, .card-header {
     color: white;
     border: 1px white solid;
@@ -68,4 +54,21 @@ footer {
     z-index: 1;
     top: 0;
     left: 0;
+}
+
+.row.feature-list-item {
+    padding: 0.5rem;
+    background: #333;
+}
+
+.row.feature-list-item#active-feature-item {
+    background: transparent;
+}
+
+.feature-detail-container {
+    display: none;
+}
+
+.feature-detail-container#active-feature-detail {
+    display: inherit;
 }
