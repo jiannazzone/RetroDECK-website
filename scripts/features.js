@@ -11,7 +11,7 @@ for (let i = 0; i < featureTitles.length; i++) {
 
     // We need to remove the gradient so that linearBackground is hidden
     if (featureTitles[i].id != 'active-feature-item') {
-        featureTitles[i].className = 'row feature-list-item rounded-3 m-0';
+        featureTitles[i].className = 'col feature-list-item rounded-3 m-0';
     }
 }
 
@@ -26,7 +26,7 @@ function updateActiveFeature(i) {
 
     // Reset previous current feature
     featureTitles[lastCurrentFeature].removeAttribute('id');
-    featureTitles[lastCurrentFeature].className = 'row feature-list-item rounded-3 m-0';
+    featureTitles[lastCurrentFeature].className = 'col feature-list-item rounded-3 m-0';
     featureTitles[lastCurrentFeature].style = '';
     featureDetails[lastCurrentFeature].removeAttribute('id');
 
