@@ -69,6 +69,10 @@ footer {
     background: #333;
 }
 
+#feature-list {
+    scrollbar-width: none;
+}
+
 .feature-list-item {
     padding: 0.5rem;
     cursor: pointer;

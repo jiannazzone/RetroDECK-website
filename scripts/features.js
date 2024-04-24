@@ -1,5 +1,6 @@
 const featureTitles = document.getElementsByClassName('feature-list-item');
 const featureDetails = document.getElementsByClassName('feature-detail-container');
+const featureList = document.getElementById('feature-list');
 let currentFeature = 0;
 
 for (let i = 0; i < featureTitles.length; i++) {
@@ -18,6 +19,7 @@ for (let i = 0; i < featureTitles.length; i++) {
 function updateActiveFeature(i) {
     const lastCurrentFeature = currentFeature;
     currentFeature = i;
+    // console.log(`${lastCurrentFeature} -> ${currentFeature}`);
 
     // New current feature
     featureTitles[currentFeature].className += ' gradient-spin my-gradient';
@@ -30,4 +32,12 @@ function updateActiveFeature(i) {
     featureTitles[lastCurrentFeature].style = '';
     featureDetails[lastCurrentFeature].removeAttribute('id');
 
+    // Update scroll position
+    const offsetPadding = 20;
+    if (lastCurrentFeature < currentFeature) {
+        featureList.scrollLeft = featureTitles[currentFeature].offsetLeft - offsetPadding;
+    } else {
+        featureList.scrollLeft = featureTitles[currentFeature].offsetLeft - featureTitles[currentFeature].offsetWidth/2 - offsetPadding;
+    }
+    
 }
