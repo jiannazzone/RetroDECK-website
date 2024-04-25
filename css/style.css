@@ -71,6 +71,7 @@ footer {
 
 #feature-list {
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 .feature-list-item {
