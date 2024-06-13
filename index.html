@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="features.html">Features</a>
+                        <a class="nav-link" href="#feature-section">Features</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" rel="noopener noreferrer"
@@ -192,6 +192,209 @@
         </div>
         <!-- End Carousel -->
 
+        <!-- Feature Jumbotron -->
+        <div id="feature-section" class="p-md-2 mb-md-4 mb-4 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
+            <div class="container-fluid py-md-5 py-3">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-md-5 fw-bold">It's dangerous to go alone! Take these.</h1>
+                        <p class="fs-md-4">
+                            With more features than you can count, RetroDECK has you covered.
+                            We're adding more with every release, so be sure to check out the Wiki for the latest
+                            updates.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a class="btn btn-dark btn-lg align-center" type="button" target="_blank"
+                            rel="noopener noreferrer" href="https://retrodeck.readthedocs.io/en/latest/">
+                            <i class="bi bi-mortarboard pe-2"></i>Full Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Jumbotron -->
+
+        <!-- Feature Section -->
+        <div class="p-md-2 p-1 mb-4 rounded-3 jumbotron" id="feature-jumbotron">
+            <div class="container-fluid">
+                <!-- Theme based on https://github.com/anthonycaccese/art-book-next-es-de-->
+
+                <div class="row">
+
+                    <!-- Left Column -->
+                    <div class="col-md-4" id="left-feature-column">
+
+                        <!-- Logo Header -->
+                        <div class="row p-3 rounded-3 d-none d-md-block" id="feature-logo-container">
+                            <div class="col">
+                                <img class="img-fluid" src="assets/logos/logo_stacked_esde.png">
+                            </div>
+                        </div>
+
+                        <!-- Feature List -->
+                        <div class="h5 row d-flex flex-md-column align-items-center overflow-x-scroll text-end flex-nowrap text-nowrap" id="feature-list">
+                            <!-- Feature 1 -->
+                            <div class="col feature-list-item gradient-spin my-gradient rounded-3 m-0"
+                                id="active-feature-item">
+                                Pick Up and Play
+                            </div>
+                            <!-- Feature 2 -->
+                            <div class="col feature-list-item gradient-spin my-gradient rounded-3 m-0" id="">
+                                Rich Metadata & Cover Art
+                            </div>
+                            <!-- Feature 3 -->
+                            <div class="col feature-list-item gradient-spin my-gradient rounded-3 m-0" id="">
+                                Custom Radial Menu
+                            </div>
+                            <!-- Feature 4 -->
+                            <div class="col feature-list-item gradient-spin my-gradient rounded-3 m-0" id="">
+                                External Controller Support
+                            </div>
+                            <!-- Feature 5 -->
+                            <div class="col feature-list-item gradient-spin my-gradient rounded-3 m-0" id="">
+                                Portable Installation
+                            </div>
+                            <!-- Feature 6 -->
+                            <div class="col feature-list-item gradient-spin my-gradient rounded-3 m-0" id="">
+                                RetroAchievement Support
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Left Column -->
+
+                    <!-- Right Column -->
+                    <div class="col-md-8 p-0 p-sm-2 ps-sm-3" id="feature-detail-column">
+                        <div class="my-gradient gradient-spin rounded-3 h-100 pt-0 pt-sm-auto">
+                            <!-- Feature 1 -->
+                            <div class="feature-detail-container rounded-3 p-3" id="active-feature-detail">
+                                <!-- Image/Video Container -->
+                                <div class="row" id="feature-media-container">
+                                    <div class="col">
+                                        <img class="img-fluid rounded-3" src="assets/screens/small/screen01.png">
+                                    </div>
+                                </div>
+
+                                <!-- Feature Detail Container -->
+                                <div class="row py-2 rounded-3 feature-text-container">
+                                    <div class="col">
+                                        <h4>Don't waste time on setup</h4>
+                                        Once installed, you can start playing with RetroDECK immediately. 
+                                        No setup wizards or configuration needed (although you can get into the weeds if you want).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="feature-detail-container rounded-3 p-3" id="">
+                                <!-- Image/Video Container -->
+                                <div class="row" id="feature-media-container">
+                                    <div class="col">
+                                        <img class="img-fluid rounded-3" src="assets/screens/small/screen02.png">
+                                    </div>
+                                </div>
+
+                                <!-- Feature Detail Container -->
+                                <div class="row py-2 rounded-3 feature-text-container">
+                                    <div class="col">
+                                        <h4>Browse your games in style</h4>
+                                        Because RetroDECK is built on top of EmulationStation-DE, your game library will be matched
+                                        by ScreenScraper and TheGamesDB. Metadata like cover art, release dates, and summaries will
+                                        be automatically downloaded.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="feature-detail-container rounded-3 p-3" id="">
+                                <!-- Image/Video Container -->
+                                <div class="row" id="feature-media-container">
+                                    <div class="col">
+                                        <img class="img-fluid rounded-3" src="assets/screens/small/screen03.png">
+                                    </div>
+                                </div>
+
+                                <!-- Feature Detail Container -->
+                                <div class="row py-2 rounded-3 feature-text-container">
+                                    <div class="col">
+                                        <h4>Access emulator settings without breaking your flow</h4>
+                                        The custom RetroDECK controller profile makes use of the left touch pad on your Steam Deck.
+                                        Just touch it, and a radial menu will appear. Menus are tailored to your current emulator and
+                                        include features such as save/load state, upscaling, and more.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 4 -->
+                            <div class="feature-detail-container rounded-3 p-3" id="">
+                                <!-- Image/Video Container -->
+                                <div class="row" id="feature-media-container">
+                                    <div class="col">
+                                        <img class="img-fluid rounded-3" src="assets/screens/small/screen04.png">
+                                    </div>
+                                </div>
+
+                                <!-- Feature Detail Container -->
+                                <div class="row py-2 rounded-3 feature-text-container">
+                                    <div class="col">
+                                        <h4>Use your official and unofficial controllers</h4>
+                                        Use your first-party Xbox, PlayStation, and Nintendo controllers, as well as
+                                        many 3rd party controllers. Guitar Hero controllers? ✅<br>
+                                        LEGO Dimensions ToyPad? ✅<br>
+                                        More supported controllers and how to implement them can be found in the 
+                                        <a target="_blank" rel="noopener noreferrer"
+                                        href="https://retrodeck.readthedocs.io/en/latest/">Wiki</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 5 -->
+                            <div class="feature-detail-container rounded-3 p-3" id="">
+                                <!-- Image/Video Container -->
+                                <div class="row" id="feature-media-container">
+                                    <div class="col">
+                                        <img class="img-fluid rounded-3" src="assets/screens/small/screen04.png">
+                                    </div>
+                                </div>
+
+                                <!-- Feature Detail Container -->
+                                <div class="row py-2 rounded-3 feature-text-container">
+                                    <div class="col">
+                                        <h4>Move to a new device</h4>
+                                        If you get a new Steam Deck or upgrade the internal storage, moving your RetroDECK installation is easy.
+                                        Just install RetroDECK on the new device and copy your existing folder over.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 6 -->
+                            <div class="feature-detail-container rounded-3 p-3" id="">
+                                <!-- Image/Video Container -->
+                                <div class="row" id="feature-media-container">
+                                    <div class="col">
+                                        <img class="img-fluid rounded-3" src="assets/screens/small/screen04.png">
+                                    </div>
+                                </div>
+
+                                <!-- Feature Detail Container -->
+                                <div class="row py-2 rounded-3 feature-text-container">
+                                    <div class="col">
+                                        <h4>Show off your skills</h4>
+                                        If you have a RetroAchievements account, you can connect it to RetroDECK and track your progress.
+                                        You can sign up <a target="_blank" rel="noopener noreferrer"
+                                        href="https://retroachievements.org/">here.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Right Column -->
+                </div>
+            </div>
+        </div>
+        <!-- End Feature Section -->
+
         <!-- Donate Jumbotron -->
         <div class="p-2 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
             <div class="container-fluid py-4">
@@ -245,6 +448,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="scripts/gradient.js"></script>
+    <script src="scripts/features.js"></script>
 </body>
 
 </html>
