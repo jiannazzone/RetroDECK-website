@@ -65,8 +65,10 @@ footer {
 
 /* Features Page Styles */
 
-#feature-jumbotron {
-    background: #333;
+#feature-section {
+    background: #222;
+    border: 1px white solid;
+
 }
 
 #feature-list {
@@ -77,8 +79,9 @@ footer {
 .feature-list-item {
     padding: 0.5rem;
     cursor: pointer;
-    background: #333;
+    background: #222;
     border: 1px transparent solid;
+    text-align: right;
 }
 
 #active-feature-item {
@@ -88,6 +91,8 @@ footer {
 .feature-detail-container {
     display: none;
     transition: display 1s ease-in-out;
+    border: 1px white solid;
+    min-height: 100%;
 }
 
 #active-feature-detail {

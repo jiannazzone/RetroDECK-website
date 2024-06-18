@@ -41,3 +41,11 @@ function updateActiveFeature(i) {
     }
     
 }
+
+const widthOutput = document.querySelector("#width");
+window.addEventListener('resize', function() {
+    const featureListElem = document.getElementById('feature-list');
+    if (widthOutput < 768) {
+        featureListElem.classList += "text-nowrap";
+    }
+})
