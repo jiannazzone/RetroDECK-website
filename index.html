@@ -31,7 +31,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg">
         <div class="container large">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/icons/squircle-icon.svg" height="40">
@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#feature-anchor">Features</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" rel="noopener noreferrer"
@@ -120,10 +120,10 @@
     <!-- End Navbar -->
 
     <!-- Main Content -->
-    <main class="container mt-4">
+    <main class="container-fluid px-0 mt-4">
 
         <!-- Jumbotron -->
-        <div class="p-2 mb-4 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
+        <div class="container p-2 mb-4 bg-body-tertiary rounded-3 jumbotron">
             <div class="container-fluid align-items-center">
                 <!-- First section -->
                 <div class="row align-items-center">
@@ -184,10 +184,50 @@
         <!-- End Jumbotron -->
 
         <!-- Screenshot/Feature Section -->
+        <div class="container-fluid mb-4" id="features" height="100px">
+            
+            <!-- Steam Deck Image -->
+            <div class="container mb-2">
+                <div class="row">
+                    <div class="col">
+                        <img clas="img-fluid" width="100%" src="assets/screens/Steam Deck.webp">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature List -->
+            <div class="row mb-2 overflow-x-scroll" id="feature-card-container">
+                <div class="col-4 feature-card mx-2" id="">
+                    <h3>Feature 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit sodales mattis. Praesent eget lacinia risus, ut bibendum est.</p>
+                </div>
+                <div class="col-4 feature-card mx-2" id="active-feature-card">
+                    <h3>Feature 2</h3>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit sodales mattis. Praesent eget lacinia risus, ut bibendum est.</p>
+                </div>
+                <div class="col-4 feature-card mx-2" id="">
+                    <h3>Feature 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit sodales mattis. Praesent eget lacinia risus, ut bibendum est.</p>
+                </div>
+                <div class="col-4 feature-card mx-2" id="">
+                    <h3>Feature 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit sodales mattis. Praesent eget lacinia risus, ut bibendum est.</p>
+                </div>
+                <div class="col-4 feature-card mx-2" id="">
+                    <h3>Feature 5</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit sodales mattis. Praesent eget lacinia risus, ut bibendum est.</p>
+                </div>
+                <div class="col-4 feature-card mx-2" id="">
+                    <h3>Feature 6</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit sodales mattis. Praesent eget lacinia risus, ut bibendum est.</p>
+                </div>
+            </div>
+
+        </div>
         <!-- End Screenshot/Feature Section -->
 
         <!-- Donate Appeal -->
-        <div class="p-2 mb-4 bg-body-tertiary rounded-3 jumbotron my-gradient gradient-spin">
+        <div class="container p-2 mb-4 bg-body-tertiary rounded-3 jumbotron">
             <div class="container-fluid py-2 align-items-center">
                 <!-- First section -->
                 <div class="row align-items-center">
@@ -248,7 +288,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- <script src="scripts/gradient.js"></script> -->
-    <!-- <script src="scripts/features.js"></script> -->
+    <script src="scripts/features.js"></script>
     <script src="scripts/accessibility.js"></script>
 </body>
 

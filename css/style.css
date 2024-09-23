@@ -15,8 +15,11 @@
     --rd-purple: #946beb;
     --rd-blue: #1a9fff;
     --rd-black: #222;
+    --gradient-1: linear-gradient(45deg, var(--rd-purple) 30%, var(--rd-blue));
+    --gradient-2: linear-gradient(45deg, var(--rd-blue) 30%, var(--rd-purple));
     --pixel-font: "Upheaval TT", monospace;
     --body-font: "Exo", serif;
+    --transition-speed: 0.1s;
 }
 
 
@@ -40,22 +43,27 @@ nav i.bi {
     font-size: small;
 }
 
-.nav-link:hover, .nav-link.show {
-    background: var(--rd-purple);
+nav .nav-link:hover, nav .nav-link.show {
+    /* background: var(--rd-purple);
     border: white solid 1px;
     border-radius: 5px;
-    margin: -1px;
+    margin: -1px; */
+    color: white;
 }
 
-.dropdown-menu.show {
+nav .dropdown-menu.show {
     background: var(--rd-purple);
-    /* background: linear-gradient(45deg, #1a9fff, #946beb); */
     border: white solid 1px;
     font-size: large;
 }
 
-a.dropdown-item:hover {
+nav a.dropdown-item:hover {
     background: var(--rd-blue);
+    color: white;
+}
+
+nav a.dropdown-item:hover svg {
+    fill: white;
 }
 
 footer {
@@ -87,8 +95,37 @@ footer {
     font-size: larger;
 }
 
-.jumbotron .btn:hover svg {
-    fill: white;
+/* Features Styles */
+#features {
+    background: #000;
+    border-top: var(--rd-purple) 5px solid;
+    border-bottom: var(--rd-purple) 5px solid;
+}
+
+#feature-card-container {
+    /* overflow-x: scroll; */
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.feature-card {
+    background: var(--rd-blue);
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 40%;
+}
+
+
+.feature-card h3 {
+    color: white;
+    font-family: var(--pixel-font);
+    text-shadow: 2px 2px var(--rd-purple);
+}
+
+.feature-card p {
+    /* font-size: larger; */
+    font-family: var(--body-font);
 }
 
 /* Link Styles */
@@ -106,4 +143,10 @@ footer {
     color: white;
     background: var(--rd-purple);
     border-color: var(--rd-black);
+    transition: var(--transition-speed);
+}
+
+.jumbotron .btn:hover svg {
+    fill: white;
+    transition: var(--transition-speed);
 }
