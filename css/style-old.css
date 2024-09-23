@@ -1,0 +1,100 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Global Styles */
+
+body {
+    background-color: #222;
+}
+
+.navbar, footer {
+    background: linear-gradient(-95deg, #1a9fff, #946beb);
+    font-family: "Source Sans 3";
+}
+
+footer {
+    color: white;
+}
+
+.navbar .dropdown-menu {
+    background-color: #222;
+}
+
+.btn {
+    font-family: "Source Sans 3", sans-serif; 
+}
+
+.jumbotron {
+    color: white;
+    border: 1px white solid;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.my-gradient {
+    background: linear-gradient(45deg, #1a9fff, 15%, #946beb);
+}
+
+.jumbotron h1 {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.jumbotron p>a, footer a, a {
+    color: #222;
+}
+
+.jumbotron p>a:hover, footer a:hover, a:hover {
+    color: white;
+}
+
+#reduce-motion-switch:checked {
+    background-color: #946beb;
+    border-color: white;
+}
+#reduce-motion-switch {
+    border-color: #946beb;
+}
+
+/* Homepage Styles */
+
+#screen-blank {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+/* Features Page Styles */
+
+#feature-section {
+    background: #222;
+    border: 1px white solid;
+
+}
+
+#feature-list {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.feature-list-item {
+    padding: 0.5rem;
+    cursor: pointer;
+    background: #222;
+    border: 1px transparent solid;
+    text-align: right;
+}
+
+#active-feature-item {
+    border: 1px white solid;
+}
+
+.feature-detail-container {
+    display: none;
+    transition: display 1s ease-in-out;
+    border: 1px white solid;
+    min-height: 100%;
+}
+
+#active-feature-detail {
+    display: block;
+} 
