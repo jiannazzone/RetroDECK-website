@@ -43,7 +43,7 @@ footer {
     border-top: var(--rd-purple) solid 5px;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.show {
     background: var(--rd-purple);
     border: white solid 1px;
     border-radius: 5px;
