@@ -40,10 +40,6 @@ nav i.bi {
     font-size: small;
 }
 
-footer {
-    border-top: var(--rd-purple) solid 5px;
-}
-
 .nav-link:hover, .nav-link.show {
     background: var(--rd-purple);
     border: white solid 1px;
@@ -62,6 +58,18 @@ a.dropdown-item:hover {
     background: var(--rd-blue);
 }
 
+footer {
+    border-top: var(--rd-purple) solid 5px;
+}
+
+#pixel-font-switch:checked {
+    background-color: #946beb;
+    border-color: white;
+}
+#pixel-font-switch {
+    border-color: #946beb;
+}
+
 /* Jumbotron Styles */
 .jumbotron {
     background: linear-gradient(45deg, var(--rd-purple) 30%, var(--rd-blue));
@@ -77,6 +85,10 @@ a.dropdown-item:hover {
 .jumbotron p {
     font-family: var(--body-font);
     font-size: larger;
+}
+
+.jumbotron .btn:hover svg {
+    fill: white;
 }
 
 /* Link Styles */
