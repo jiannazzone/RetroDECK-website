@@ -8,10 +8,14 @@
     src: url("../assets/fonts/exo.otf");
 }
 
+
+/* CSS Variables */
 :root {
     --rd-purple: #946beb;
     --rd-blue: #1a9fff;
     --rd-black: #222;
+    --pixel-font: "Upheaval TT", monospace;
+    --body-font: "Exo", serif;
 }
 
 
@@ -23,7 +27,7 @@ body {
 
 nav, footer {
     background: var(--rd-blue);
-    font-family: "Upheaval TT", monospace;
+    font-family: var(--pixel-font);
 }
 
 nav {
@@ -64,13 +68,13 @@ a.dropdown-item:hover {
 }
 
 .jumbotron h1,h2 {
-    font-family: "Upheaval TT", monospace;
+    font-family: var(--pixel-font);
     text-shadow: 2px 2px var(--rd-purple);
     color: white;
 }
 
 .jumbotron p {
-    font-family: "Exo", serif;
+    font-family: var(--body-font);
     font-size: larger;
 }
 
@@ -82,7 +86,7 @@ a.dropdown-item:hover {
     padding: 5px;
     border: white 1px solid;
     border-radius: 5px;
-    font-family: "Upheaval TT", monospace;
+    font-family: var(--pixel-font);
 }
 
 .jumbotron p a:hover, footer a:hover, a.btn:hover {
