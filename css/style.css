@@ -39,6 +39,13 @@ footer {
     border-top: var(--rd-purple) solid 5px;
 }
 
+.nav-link:hover {
+    background: var(--rd-purple);
+    border: white solid 1px;
+    border-radius: 5px;
+    margin: -1px;
+}
+
 .dropdown-menu.show {
     background: var(--rd-purple);
     /* background: linear-gradient(45deg, #1a9fff, #946beb); */
@@ -56,13 +63,15 @@ a.dropdown-item:hover {
     border: white 2px solid;
 }
 
-.jumbotron h1 {
+.jumbotron h1,h2 {
     font-family: "Upheaval TT", monospace;
     text-shadow: 2px 2px var(--rd-purple);
+    color: white;
 }
 
 .jumbotron p {
     font-family: "Exo", serif;
+    font-size: larger;
 }
 
 /* Link Styles */
