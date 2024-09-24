@@ -44,10 +44,6 @@ nav i.bi {
 }
 
 nav .nav-link:hover, nav .nav-link.show {
-    /* background: var(--rd-purple);
-    border: white solid 1px;
-    border-radius: 5px;
-    margin: -1px; */
     color: white;
 }
 
@@ -103,32 +99,44 @@ footer {
     border-bottom: var(--rd-purple) 5px solid;
 }
 
-#feature-card-row, #screenshot-row {
+#feature-row {
     flex-wrap: nowrap;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
 
-.screenshot {
+.feature-container {
+    transition: 0.5s;
+    cursor: pointer;
     scale: 80%;
+    scroll-margin-top: 20px;
+    max-height: fit-content;
+}
+
+.feature-container#active-feature {
+    transition: 0.5s;
+    scale: 100%;
+}
+
+.empty-feature-container {
+    visibility: hidden;
+}
+
+img.screenshot {
+    border: white 2px solid;
+    border-radius: 5px;
+    margin: auto;
+    width: 150%;
 }
 
 .feature-card {
     background: var(--rd-blue);
     border: white 2px solid;
     border-radius: 5px;
-    cursor: pointer;
-    scale: 80%;
+    transition: 0.5s;
+    width: 75%;
 }
 
-.feature-card#active-feature-card, .screenshot#active-screenshot {
-    scale: 100%;
-    transition: 0.25s;
-}
-
-.feature-card#empty-feature, .screenshot#empty-screenshot {
-    visibility: hidden;
-}
 .feature-card h3 {
     color: white;
     font-family: var(--pixel-font);
