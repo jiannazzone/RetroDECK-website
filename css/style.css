@@ -96,27 +96,39 @@ footer {
 }
 
 /* Features Styles */
+
 #features {
     background: #000;
     border-top: var(--rd-purple) 5px solid;
     border-bottom: var(--rd-purple) 5px solid;
 }
 
-#feature-card-container {
-    /* overflow-x: scroll; */
+#feature-card-row, #screenshot-row {
     flex-wrap: nowrap;
     scrollbar-width: none;
     scroll-behavior: smooth;
+}
+
+.screenshot {
+    scale: 80%;
 }
 
 .feature-card {
     background: var(--rd-blue);
     border: white 2px solid;
     border-radius: 5px;
-    width: 40%;
+    cursor: pointer;
+    scale: 80%;
 }
 
+.feature-card#active-feature-card, .screenshot#active-screenshot {
+    scale: 100%;
+    transition: 0.25s;
+}
 
+.feature-card#empty-feature, .screenshot#empty-screenshot {
+    visibility: hidden;
+}
 .feature-card h3 {
     color: white;
     font-family: var(--pixel-font);
