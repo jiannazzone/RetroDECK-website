@@ -1,26 +1,31 @@
+const screenshotElems = document.getElementsByClassName('screenshot');
 const featureCardElems = document.getElementsByClassName('feature-card');
-const featureCardContainerElem = document.getElementById('feature-card-container');
-let currentFeatureCard = 1
+let currentFeature = 1
 
 for (let i = 0; i < featureCardElems.length; i++) {
-    featureCardElems[i].addEventListener('click', function() {
-        if (i != currentFeatureCard) {
-            updateActiveFeatureCard(i);
+    screenshotElems[i].addEventListener('click', function() {
+        if (i != currentFeature) {
+            updateActiveFeature(i);
         }
-    }, false)
+    })
+    featureCardElems[i].addEventListener('click', function() {
+        if (i != currentFeature) {
+            updateActiveFeature(i);
+        }
+    })
 }
 
-function updateActiveFeatureCard(i) {
-    const lastCurrentFeature = currentFeatureCard;
-    currentFeatureCard = i;
-    console.log(i)
+function updateActiveFeature(i) {
+    const lastCurrentFeature = currentFeature;
+    currentFeature = i;
+
+    screenshotElems[i].id = 'active-screenshot';
+    screenshotElems[lastCurrentFeature].id = "";    
 
     featureCardElems[i].id = 'active-feature-card';
     featureCardElems[lastCurrentFeature].id = "";
-    if (lastCurrentFeature < i) {
-        // featureCardContainerElem.scrollLeft = featureCardElems[i].offsetLeft - featureCardElems[i].offsetWidth/2
-        featureCardContainerElem.scrollIntoView
-    } else {
-        featureCardContainerElem.scrollLeft = featureCardElems[i].offsetLeft - featureCardElems[i].offsetWidth
-    }
+    
+    
+    featureCardElems[i].scrollIntoView({inline: 'center'});
+    screenshotElems[i].scrollIntoView({inline: 'center'});
 }
