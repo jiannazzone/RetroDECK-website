@@ -119,22 +119,22 @@ footer {
     cursor:auto;
 } */
 
-.empty-feature-container {
+/* .empty-feature-container {
     visibility: hidden;
-}
+} */
 
 img.screenshot {
     border: white 2px solid;
     border-radius: 5px;
     margin: auto;
-    width: 150%;
+    /* width: 150%; */
 }
 
 .feature-card {
     background: var(--rd-blue);
     border: white 2px solid;
     border-radius: 5px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     width: 75%;
 }
 
