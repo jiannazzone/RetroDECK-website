@@ -99,25 +99,25 @@ footer {
     border-bottom: var(--rd-purple) 5px solid;
 }
 
-#feature-row {
+/* #feature-row {
     flex-wrap: nowrap;
     scrollbar-width: none;
     scroll-behavior: smooth;
-}
+} */
 
-.feature-container {
+/* .feature-container {
     transition: 0.5s;
     cursor: pointer;
     scale: 80%;
     scroll-margin-top: 20px;
     max-height: fit-content;
-}
+} */
 
-.feature-container#active-feature {
+/* .feature-container#active-feature {
     transition: 0.5s;
     scale: 100%;
     cursor:auto;
-}
+} */
 
 .empty-feature-container {
     visibility: hidden;
