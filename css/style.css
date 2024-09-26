@@ -116,6 +116,7 @@ footer {
 .feature-container#active-feature {
     transition: 0.5s;
     scale: 100%;
+    cursor:auto;
 }
 
 .empty-feature-container {
