@@ -134,8 +134,9 @@ img.screenshot {
     background: var(--rd-blue);
     border: white 2px solid;
     border-radius: 5px;
+    text-align: left;
     /* transition: 0.5s; */
-    width: 75%;
+    /* width: 75%; */
 }
 
 .feature-card h3 {
@@ -147,6 +148,28 @@ img.screenshot {
 .feature-card p {
     /* font-size: larger; */
     font-family: var(--body-font);
+}
+
+img.d-pad {
+    opacity: 0%;
+    transition: 0.25s;
+}
+
+.carousel-button:hover img.d-pad {
+    opacity: 100%;
+    transition: 0.25s;
+}
+
+.carousel-indicators {
+    opacity: 0%;
+    pointer-events: none;
+    transition: 0.25s;
+}
+
+.carousel:hover .carousel-indicators {
+    opacity: 100%;
+    pointer-events: auto;
+    transition: 0.25s;
 }
 
 /* Link Styles */

@@ -290,10 +290,17 @@
         <!-- Screenshots and Features as Bootstrap Carousel -->
         <div class="container-fluid mb-4" id="features">
             <div class="carousel slide py-2" id="features-carousel">
-                <div class="carousel-inner">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#features-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#features-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#features-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#features-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#features-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner pb-md-5">
                     <div class="carousel-item active feature-container">
-                        <img src="assets/screens/large/screen01.png" class="d-block w-75 screenshot" alt="" />
-                        <div class="feature-card px-5 mt-2 mx-auto">
+                        <img src="assets/screens/large/screen01.png" class="d-block w-100 screenshot" alt="" />
+                        <div class="feature-card px-2 mt-2 mx-auto">
                             <h3>Feature 1</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit
                                 sodales
@@ -302,8 +309,8 @@
                     </div>
 
                     <div class="carousel-item feature-container">
-                        <img src="assets/screens/large/screen02.png" class="d-block w-75 screenshot" alt="" />
-                        <div class="feature-card px-5 mt-2 mx-auto">
+                        <img src="assets/screens/large/screen02.png" class="d-block w-100 screenshot" alt="" />
+                        <div class="feature-card px-2 mt-2 mx-auto">
                             <h3>Feature 2</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit
                                 sodales
@@ -312,8 +319,8 @@
                     </div>
 
                     <div class="carousel-item feature-container">
-                        <img src="assets/screens/large/screen03.png" class="d-block w-75 screenshot" alt="" />
-                        <div class="feature-card px-5 mt-2 mx-auto">
+                        <img src="assets/screens/large/screen03.png" class="d-block w-100 screenshot" alt="" />
+                        <div class="feature-card px-2 mt-2 mx-auto">
                             <h3>Feature 3</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit
                                 sodales
@@ -322,8 +329,8 @@
                     </div>
 
                     <div class="carousel-item feature-container">
-                        <img src="assets/screens/large/screen04.png" class="d-block w-75 screenshot" alt="" />
-                        <div class="feature-card px-5 mt-2 mx-auto">
+                        <img src="assets/screens/large/screen04.png" class="d-block w-100 screenshot" alt="" />
+                        <div class="feature-card px-2 mt-2 mx-auto">
                             <h3>Feature 4</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit
                                 sodales
@@ -332,8 +339,8 @@
                     </div>
 
                     <div class="carousel-item feature-container">
-                        <img src="assets/screens/large/screen05.png" class="d-block w-75 screenshot" alt="" />
-                        <div class="feature-card px-5 mt-2 mx-auto">
+                        <img src="assets/screens/large/screen05.png" class="d-block w-100 screenshot" alt="" />
+                        <div class="feature-card px-2 mt-2 mx-auto">
                             <h3>Feature 5</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia elit sagittis elit
                                 sodales
@@ -341,15 +348,12 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#features-carousel" data-bs-slide="prev" id="carousel-prev">
-                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                
+                <button class="carousel-control-prev carousel-button" type="button" data-bs-target="#features-carousel" data-bs-slide="prev" id="carousel-prev">
                     <img class="d-pad d-none d-md-block" src="assets/pixel-icons/steamdeck_dpad_left_outline.svg" aria-hidden="true"/>
-                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#features-carousel" data-bs-slide="next" id="carousel-next">
-                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <button class="carousel-control-next carousel-button" type="button" data-bs-target="#features-carousel" data-bs-slide="next" id="carousel-next">
                     <img class="d-pad d-none d-md-block" src="assets/pixel-icons/steamdeck_dpad_right_outline.svg" aria-hidden="true"/>
-                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
