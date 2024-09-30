@@ -174,7 +174,7 @@ img.d-pad {
 }
 
 /* Link Styles */
-.jumbotron p a, footer a, a.btn {
+.jumbotron p a, footer a, a.btn, .feature-card a {
     color: var(--rd-purple);
     background: var(--rd-black);
     text-decoration: none;
