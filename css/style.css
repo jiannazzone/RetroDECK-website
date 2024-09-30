@@ -97,6 +97,7 @@ footer {
     background: #000;
     border-top: var(--rd-purple) 5px solid;
     border-bottom: var(--rd-purple) 5px solid;
+    transition: 0.25s;
 }
 
 /* #feature-row {
@@ -127,7 +128,6 @@ img.screenshot {
     border: white 2px solid;
     border-radius: 5px;
     margin: auto;
-    /* width: 150%; */
 }
 
 .feature-card {
@@ -135,9 +135,11 @@ img.screenshot {
     border: white 2px solid;
     border-radius: 5px;
     text-align: left;
-    /* transition: 0.5s; */
-    /* width: 75%; */
 }
+
+/* img.screenshot, .feature-card {
+    max-width: 800px;
+} */
 
 .feature-card h3 {
     color: white;
@@ -146,7 +148,6 @@ img.screenshot {
 }
 
 .feature-card p {
-    /* font-size: larger; */
     font-family: var(--body-font);
 }
 
