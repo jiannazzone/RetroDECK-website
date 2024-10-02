@@ -92,37 +92,12 @@ footer {
 }
 
 /* Features Styles */
-
 #features {
     background: #000;
     border-top: var(--rd-purple) 5px solid;
     border-bottom: var(--rd-purple) 5px solid;
     transition: 0.25s;
 }
-
-/* #feature-row {
-    flex-wrap: nowrap;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-} */
-
-/* .feature-container {
-    transition: 0.5s;
-    cursor: pointer;
-    scale: 80%;
-    scroll-margin-top: 20px;
-    max-height: fit-content;
-} */
-
-/* .feature-container#active-feature {
-    transition: 0.5s;
-    scale: 100%;
-    cursor:auto;
-} */
-
-/* .empty-feature-container {
-    visibility: hidden;
-} */
 
 img.screenshot {
     border: white 2px solid;
@@ -136,10 +111,6 @@ img.screenshot {
     border-radius: 5px;
     text-align: left;
 }
-
-/* img.screenshot, .feature-card {
-    max-width: 800px;
-} */
 
 .feature-card h3 {
     color: white;
