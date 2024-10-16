@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   padding-right: 30px;
+  cursor: pointer;
 }
 
 #features .row:nth-child(odd) .stack {
@@ -10,13 +11,12 @@
 
 .screenshot {
   position: relative;
-  /* transition: bottom 400ms; */
+  transition: bottom 250ms;
 }
 
 .screenshot:nth-child(3) {
   z-index: 4;
   left: -200%;
-  cursor: pointer;
 }
 
 .screenshot:nth-child(2) {
@@ -53,6 +53,15 @@
   }
 } */
 
+@keyframes shift {
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
 @keyframes fade-out {
   0% {
     /* z-index: 3; */
@@ -62,19 +71,23 @@
   100% {
     /* z-index: 0; */
     opacity: 0;
+    left: calc(-200% - 10px);
     bottom: -30px;
+    scale: 1.05;
   }
 }
 
 @keyframes fade-in {
   0% {
-    /* z-index: 3; */
-    bottom: 0;
-    opacity: 10px;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+    scale: 0.95;
   }
   100% {
-    /* z-index: 0; */
     opacity: 1;
+    left: 20px;
     bottom: 20px;
+    scale: 1.0;
   }
 }
