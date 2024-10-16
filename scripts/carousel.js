@@ -1,9 +1,6 @@
-let timing = 2000;
-
-// let stack = document.querySelector(".stack");
+let timing = 400;
 let stacks = document.getElementsByClassName('stack');
 
-// [...stack.children].reverse().forEach(i => stack.append(i));
 for (let i = 0; i < stacks.length; i++) {
     [...stacks[i].children].reverse().forEach(j => stacks[i].append(j));
     stacks[i].addEventListener("click", swap);
@@ -12,10 +9,16 @@ for (let i = 0; i < stacks.length; i++) {
 function swap(e) {
     let thisTarget = e.target
     if (!thisTarget.classList.contains('screenshot')) return;
-    thisTarget.style.animation = `swap ${timing}ms ease-in-out forwards`;
+    thisTarget.style.animation = `fade-out ${timing}ms ease-in forwards`;
 
     setTimeout(() => {
-        thisTarget.style.animation = "";
+        thisTarget.style.animation = `fade-in ${timing}ms ease-out forwards`;
         this.prepend(thisTarget);
+        // thisTarget.style = '';
+
     }, timing);
+
+    setTimeout(() => {
+        thisTarget.style = '';
+    }, 2*timing);
 }
