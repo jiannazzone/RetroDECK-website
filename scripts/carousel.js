@@ -1,9 +1,12 @@
-let timing = 400;
+let timing = 250;
 let stacks = document.getElementsByClassName('stack');
 
 for (let i = 0; i < stacks.length; i++) {
     [...stacks[i].children].reverse().forEach(j => stacks[i].append(j));
-    stacks[i].addEventListener("click", swap);
+    if (stacks[i].children.length > 1) {
+        stacks[i].addEventListener('click', swap);
+        stacks[i].style.cursor = 'pointer';
+    }
 }
 
 function swap(e) {
@@ -14,11 +17,10 @@ function swap(e) {
     setTimeout(() => {
         thisTarget.style.animation = `fade-in ${timing}ms ease-out forwards`;
         this.prepend(thisTarget);
-        // thisTarget.style = '';
-
     }, timing);
 
     setTimeout(() => {
+        // this.prepend(thisTarget);
         thisTarget.style = '';
     }, 2*timing);
 }

@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   padding-right: 30px;
-  cursor: pointer;
 }
 
 #features .row:nth-child(odd) .stack {
@@ -62,17 +61,20 @@
   }
 }
 
+
+/*
+Commented lines make the animation more flexible
+with different numbers of slides
+*/
 @keyframes fade-out {
   0% {
-    /* z-index: 3; */
-    bottom: 0;
+    /* bottom: 0; */
     opacity: 1;
   }
   100% {
-    /* z-index: 0; */
     opacity: 0;
-    left: calc(-200% - 10px);
-    bottom: -30px;
+    /* left: calc(-200% - 10px); */
+    /* bottom: -30px; */
     scale: 1.05;
   }
 }
