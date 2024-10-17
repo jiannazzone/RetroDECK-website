@@ -153,7 +153,7 @@ p {
 }
 
 /* Link Styles */
-.jumbotron p a, footer a, a.btn, .feature-card a {
+.jumbotron a, footer a, a.btn, .feature-card a, .feature-card a {
     color: var(--rd-purple);
     background: var(--rd-black);
     text-decoration: none;
@@ -163,7 +163,7 @@ p {
     font-family: var(--pixel-font);
 }
 
-.jumbotron p a:hover, footer a:hover, a.btn:hover {
+.jumbotron a:hover, footer a:hover, a.btn:hover, .feature-card a:hover {
     color: white;
     background: var(--rd-purple);
     border-color: var(--rd-black);
