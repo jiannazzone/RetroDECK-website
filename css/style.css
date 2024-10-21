@@ -82,7 +82,7 @@ footer {
 
 .jumbotron h1,h2 {
     font-family: var(--pixel-font);
-    text-shadow: 2px 2px var(--rd-purple);
+    text-shadow: 2px 2px var(--rd-black);
     color: white;
 }
 
@@ -113,6 +113,7 @@ p {
 .feature-card h3 {
     color: white;
     font-family: var(--pixel-font);
+    text-shadow: 2px 2px var(--rd-black);
 }
 
 .feature-card p {
@@ -135,7 +136,7 @@ p {
 }
 
 #features .row:nth-child(odd) h3 {
-    text-shadow: 2px 2px var(--rd-purple);
+    /* text-shadow: 2px 2px var(--rd-purple); */
     padding-right: 20px;
 }
 
@@ -149,7 +150,7 @@ p {
 }
 
 #features .row:nth-child(even) h3 {
-    text-shadow: 2px 2px var(--rd-blue);
+    /* text-shadow: 2px 2px var(--rd-blue); */
 }
 
 /* Link Styles */
